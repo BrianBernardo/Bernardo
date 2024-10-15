@@ -1,0 +1,14 @@
+{% extends 'app/base.html' %}
+
+{% block title %}Select Your Mood{% endblock %}
+
+{% block content %}
+    <h2>Select Your Mood</h2>
+    <ul>
+        <li><a href="{% url 'mood_playlist' 'Happy' %}">Happy</a></li>
+        <li><a href="{% url 'mood_playlist' 'Sad' %}">Sad</a></li>
+        <li><a href="{% url 'mood_playlist' 'Excited' %}">Excited</a></li>
+        <li><a href="{% url 'mood_playlist' 'Relaxed' %}">Relaxed</a></li>
+        <!-- Add more moods as needed -->
+    </ul>
+{% endblock %}
